@@ -17,7 +17,7 @@ h3 {
 }
 
 .padding-top-cover {
-  padding-top: 130px;
+  padding-top: 150px;
 }
 
 .padding-top-90 {
@@ -25,7 +25,7 @@ h3 {
 }
 
 .cover-image {
-    height: 75vh;
+    height: 60vh;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -114,4 +114,50 @@ h3 {
     top: 0;
     z-index: auto;
     min-width: 380px;
+}
+
+.parallax {
+  height: 480px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-add {
+      border-color: rgba(255,255,255,0.72);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(27,29,2,0.44);
+    // font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+.navbar-nav {
+      float: left;
+    margin: 0;
+    list-style:none;
+}
+.navigatiom-add {
+      border-color: rgba(255,255,255,0.72);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(57, 152, 207, 0.54);
+    // font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+.nav-btn {
+  border-right-style: double;
+    border-left-color: rgba(255,255,255,0.72);
+    border-right-color: rgba(255,255,255,0.72);
+    width: 110px;
+        font-weight: 100;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

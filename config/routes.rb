@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root                  to: 'pages#home'
   get 'form',           to: 'pages#form'
+  get 'apie',           to: 'pages#apie'
 
 
   get "laidojimo-namai-vilniuje-kainos",       to: 'pages#home'
