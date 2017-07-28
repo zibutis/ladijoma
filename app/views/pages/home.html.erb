@@ -3,7 +3,7 @@
 <title>Visi Laidojimo Namai Vilniuje</title>
 <meta content="Skambinkite ir mes Jums rasime tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje. Telefonas visą parą:869304228" name="description">
 
-<meta property="og:title" content="Laidojimo namai ir Kremavimo Paslaugos Vilniuje"/>
+<meta property="og:title" content="Laidojimo Namai ir Kremavimo Paslaugos Vilniuje"/>
 <meta property="og:url" content="https://ladijoma.herokuapp.com/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:description" content="Skambinkite ir mes Jums rasime tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje. Telefonas visą parą :869304228"/>
@@ -11,13 +11,20 @@
 <% end %>
 
 <div class="background-gradient">
-<div class="cover-image shadow" style="background:url(<%= image_path 'laidojimo_namai' %>);">
+<div class="cover-image parallax" style="background:url(<%= image_path 'laidojimo_namai' %>);  height: 480px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-5 col-md-7">
+      <div class="col-md-offset-2 col-md-8">
         <div class="text-center padding-top-cover">
-          <h1>Laidojimo namai ir Kremavimo Paslaugos Vilniuje</h1>
-          <h3>Skambinkite ir mes Jums rasime tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje. Telefonas visą parą <a href="tel:+37069304228">869304228</a> </h3>
+          <!-- <h1>Visi Laidojimo Namai ir Kremavimo Paslaugos Vilniuje</h1> -->
+          <!-- <h3>Užsisakyk internetu tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje.</h3> -->
+          <h1 style="color: rgba(17, 136, 203, 0.82);
+    font-weight: 600;">Laidojimo ir Kremavimo Paslaugos Vilniuje</h1>
+          <%= link_to "užsisakyk internetu", form_path, class:"btn btn-warning", style:"    font-size:25px;margin-top: 14px;"%>
         </div>
       </div>
     </div>
@@ -26,7 +33,8 @@
 
 <!-- <div class="container"> -->
   <!-- <div class="row"> -->
-    <div class="col-md-6">
+    <div class="col-md-6" style="
+    background-color: rgba(241, 231, 231, 0.35);">
       <div class="padding-top-90">
         <div class="card">
 
@@ -52,7 +60,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> 7 šarvojimo salės</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -81,7 +89,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia cerkvės</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -111,7 +119,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> 9 šarvojimo salės</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -140,7 +148,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -169,7 +177,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -199,7 +207,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -229,7 +237,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -259,7 +267,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -288,7 +296,7 @@
               <h2>  </h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -315,7 +323,7 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right", 'data-target' => "#myModal", 'data-toggle' => "modal"%>
+            <%= link_to "užsisakyk", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
@@ -323,7 +331,8 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6" style="
+    background-color: rgba(241, 231, 231, 0.35);">
       <div class="padding-top-90" style="height: 2870px;">
         <div style=" position: sticky;position: -webkit-sticky; top: 0;">
           <img src="<%= image_path 'map' %>" alt="" class="map">
@@ -340,8 +349,6 @@
 <!-- </div> -->
 
 
-
-<%= render 'shared/modal' %>
 
 
 
