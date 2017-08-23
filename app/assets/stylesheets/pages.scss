@@ -5,10 +5,16 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Montserrat;
+    color: #555;
 }
 
 h1 {
   font-size: 48px;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 h3 {
@@ -57,6 +63,7 @@ h3 {
     border-radius: 7px;
     padding: 20px;
     margin-bottom: 35px;
+    min-height: 478px;
 }
 
 .card h1 {
@@ -85,8 +92,8 @@ h3 {
 }
 
 .picture {
-    height: 200px;
-    width: 300px;
+    height: 210px;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -95,7 +102,7 @@ h3 {
 }
 
 .green {
-  color: green;
+  color: rgba(0, 128, 0, 0.74);
 }
 
 .margin-top-15 {
@@ -130,7 +137,7 @@ h3 {
     top: 0px;
     width: 100%;
     z-index: 99;
-    background-color: rgba(27,29,2,0.44);
+    background-color: #2482dc;
     // font-family: 'Amatic SC', cursive;
     font-size: 20px;
 }
@@ -146,7 +153,7 @@ h3 {
     top: 0px;
     width: 100%;
     z-index: 99;
-    background-color: rgba(57, 152, 207, 0.54);
+    background-color: #2482dc;
     // font-family: 'Amatic SC', cursive;
     font-size: 20px;
 }
@@ -160,4 +167,31 @@ h3 {
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.paketas {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.prof-img {
+  width: 100%;
+}
+
+
+img {
+    transition: -webkit-transform 0.25s ease;
+}
+img:active {
+    -webkit-transform: scale(2);
+}
+
+
+tbody tr th {
+  color: #888;
+  font-weight: 400;
+}
+
+.green-circle {
+  color: rgba(36, 220, 79, 0.65);
 }

@@ -21,10 +21,10 @@
       <div class="col-md-offset-2 col-md-8">
         <div class="text-center padding-top-cover">
           <!-- <h1>Visi Laidojimo Namai ir Kremavimo Paslaugos Vilniuje</h1> -->
-          <!-- <h3>rezervuokite internetu tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje.</h3> -->
+          <!-- <h3>skaityti daugiau tinkamiausią pasiūlymą laidojimo bei kremavimo paslaugoms Vilniuje.</h3> -->
           <h1 style="color: rgba(17, 136, 203, 0.82);
     font-weight: 600;">Visos Laidojimo ir Kremavimo Paslaugos Vilniuje</h1>
-          <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning", style:"    font-size:25px;margin-top: 14px;"%>
+          <%= link_to "užsakykite internetu", form_path, class:"btn btn-warning", style:"    font-size:25px;margin-top: 14px;"%>
 <!--           <h4 style="color: rgba(34, 34, 34, 0.68);">arba telefonu</h4> -->
         </div>
       </div>
@@ -34,17 +34,20 @@
 
 <!-- <div class="container"> -->
   <!-- <div class="row"> -->
-    <div class="col-md-6" style="
+    <div class="col-md-7" style="
     background-color: rgba(241, 231, 231, 0.35);">
       <div class="padding-top-90">
+
+  <div class="col-md-12" id="shuffle">
+    <div class="col-md-6">
         <div class="card">
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <img src="<%= image_path 'nutrukusi_styga' %>" alt="" class="picture">
             </div>
 
-           <div class="col-md-6">
+           <div class="col-md-12">
             <h1>Nutrūkusi styga</h1>
             <div class="margin">
               <i class="fa fa-star star-color" aria-hidden="true"></i>
@@ -53,8 +56,8 @@
               <i class="fa fa-star star-color" aria-hidden="true"></i>
             </div>
             <div class="margin-top-15"></div>
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Ąžuolyno g. 10, Viršuliškės, Vilnius</h2>
+            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400;font-size: 13px; color: #333;">Adresas:</span > Ąžuolyno g. 10, Viršuliškės, Vilnius</h2>
+            <h2><i class="glyphicon glyphicon-euro" style="color: #333; font-size: 13px;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333; ">Kaina:</span > 1700 eur (Tradicinis paketas)</h2>
 
             <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052142618" style="font-weight: bolder;">+37052142618</a></h2> -->
 
@@ -63,20 +66,23 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
               <h2><i class="fa fa-check green" aria-hidden="true"></i> 7 šarvojimo salės</h2>
 
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
+<!--             <h2><i class="fa fa-dollar" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">1500 eur</span ></h2> -->
+            <%= link_to "skaityti daugiau", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
         </div>
+      </div>
 
+
+<div class="col-md-6">
         <div class="card">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <img src="<%= image_path 'lakrima' %>" alt="" class="picture">
             </div>
 
-           <div class="col-md-6">
+           <div class="col-md-12">
             <h1>Lakrima</h1>
             <div class="margin">
               <i class="fa fa-star star-color" aria-hidden="true"></i>
@@ -88,6 +94,7 @@
 
 
             <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Kalvarijų g. 67, Šnipiškės, Vilnius</h2>
+            <h2><i class="glyphicon glyphicon-euro" style="color: #333; font-size: 13px;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333; ">Kaina:</span > 1550 eur (Tradicinis paketas)</h2>
 
             <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052142400" style="font-weight: bolder;">+37052142400</a></h2> -->
 
@@ -96,20 +103,21 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia cerkvės</h2>
 
 
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
+            <%= link_to "skaityti daugiau", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
         </div>
+</div>
 
-
+<div class="col-md-6">
         <div class="card">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <img src="<%= image_path 'laidojimo_rumai' %>" alt="" class="picture">
             </div>
 
-           <div class="col-md-6">
+           <div class="col-md-12">
             <h1>Laidojimo rūmai</h1>
             <div class="margin">
               <i class="fa fa-star star-color" aria-hidden="true"></i>
@@ -121,6 +129,7 @@
 
 
             <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Olandų g. 22,  Vilnius</h2>
+            <h2><i class="glyphicon glyphicon-euro" style="color: #333; font-size: 13px;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333; ">Kaina:</span > 1500 eur (Tradicinis paketas)</h2>
 
    <!--          <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052143013" style="font-weight: bolder;">+37052143013</a></h2> -->
 
@@ -129,180 +138,22 @@
               <h2><i class="fa fa-check green" aria-hidden="true"></i> 9 šarvojimo salės</h2>
 
 
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
+            <%= link_to "skaityti daugiau", laidojimo_rumai_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="<%= image_path 'laidojimo_centras' %>" alt="" class="picture">
-            </div>
-
-           <div class="col-md-6">
-            <h1>Laidojimo centras</h1>
-            <div class="margin">
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-            </div>
-            <div class="margin-top-15"></div>
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > J.Matulaičio a. 3, Viršuliškės, Vilnius</h2>
-
-            <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052143002" style="font-weight: bolder;">+37052143002</a></h2> -->
-
-            <div class="margin-top-15"></div>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
-
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
-
-           </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="<%= image_path 'laidojimo_centras_kalvarijos' %>" alt="" class="picture">
-            </div>
-
-           <div class="col-md-6">
-            <h1>Laidojimo centras</h1>
-            <div class="margin">
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-            </div>
-            <div class="margin-top-15"></div>
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Kalvarijų g. 329, Jeruzalė, Vilnius</h2>
-
-            <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas: --><!-- </span > <a href="tel:+37052141994" style="font-weight: bolder;">+37052141994</a></h2> -->
-
-            <div class="margin-top-15"></div>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
-
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
-
-           </div>
-          </div>
         </div>
 
 
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="<%= image_path 'laidojimo_centras_tolminkiemio' %>" alt="" class="picture">
-            </div>
-
-           <div class="col-md-6">
-            <h1>Laidojimo centras</h1>
-            <div class="margin">
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-            </div>
-            <div class="margin-top-15"></div>
-
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Tolminkiemio g. 4, Pilaitė, Vilnius</h2>
-
-            <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas: --><!-- </span > <a href="tel:+37052142745" style="font-weight: bolder;">+37052142745</a></h2> -->
-
-            <div class="margin-top-15"></div>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
-
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
-
-           </div>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="<%= image_path 'laidojimo_centras_paco' %>" alt="" class="picture">
-            </div>
-
-           <div class="col-md-6">
-            <h1>Laidojimo centras</h1>
-            <div class="margin">
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-            </div>
-            <div class="margin-top-15"></div>
-
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Paco g. 4, Antakalnis, Vilnius</h2>
-
-            <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas: --><!-- </span > <a href="tel:+37052140441" style="font-weight: bolder;">+37052140441</a></h2> -->
-
-            <div class="margin-top-15"></div>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
-
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
-
-           </div>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="<%= image_path 'laidojimo_centras_palydovo' %>" alt="" class="picture">
-            </div>
-
-           <div class="col-md-6">
-            <h1>Laidojimo centras</h1>
-            <div class="margin">
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-              <i class="fa fa-star star-color" aria-hidden="true"></i>
-            </div>
-            <div class="margin-top-15"></div>
-
-
-            <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Palydovo g. 13, Naujoji Vilnia, Vilnius</h2>
-
-            <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052140399" style="font-weight: bolder;">+37052140399</a></h2> -->
-
-            <div class="margin-top-15"></div>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Visos laidojimo paslaugos</h2>
-              <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
-
-
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
-
-           </div>
-          </div>
-        </div>
-
+      <div class="col-md-6">
         <div class="card" >
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <img src="<%= image_path 'reverans' %>" alt="" class="picture">
             </div>
 
-           <div class="col-md-6">
+           <div class="col-md-12">
             <h1>Reverans</h1>
             <div class="margin">
               <i class="fa fa-star star-color" aria-hidden="true"></i>
@@ -313,6 +164,7 @@
             <div class="margin-top-15"></div>
 
             <h2><i class="fa fa-map-marker" style="color: #333;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Adresas:</span > Molėtų g. 4a, Didžioji Riešė, Vilnius</h2>
+            <h2><i class="glyphicon glyphicon-euro" style="color: #333; font-size: 13px;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333; ">Kaina:</span > 1300 eur (Tradicinis paketas)</h2>
 
             <!-- <h2><i class="fa fa-phone" style="color: #333;" aria-hidden="true"></i>  <span style="font-weight: 400; color: #333;">Telefonas:</span > <a href="tel:+37052142825" style="font-weight: bolder;">+37052142825</a></h2> -->
 
@@ -321,20 +173,21 @@
               <h2>  </h2>
 
 
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
+            <%= link_to "skaityti daugiau", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
         </div>
+      </div>
 
-
+      <div class="col-md-6">
         <div class="card">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <img src="<%= image_path 'nera' %>" alt="" class="picture">
             </div>
 
-           <div class="col-md-6">
+           <div class="col-md-12">
             <h1>Smėlio pilis</h1>
             <div class="margin">
               <i class="fa fa-star star-color" aria-hidden="true"></i>
@@ -343,24 +196,81 @@
             <div class="margin-top-15"></div>
 
             <h2><span style="font-weight: 400;">Adresas: </span >Vilniaus g. 57, Grigiškės, Vilnius</h2>
+            <h2><i class="glyphicon glyphicon-euro" style="color: #333; font-size: 13px;"  aria-hidden="true"></i>  <span style="font-weight: 400; color: #333; ">Kaina:</span > 1300 eur (Tradicinis paketas)</h2>
 
             <div class="margin-top-15"></div>
               <h2><i class="fa fa-check green" aria-hidden="true"></i> Šalia bažnyčios</h2>
 
 
-            <%= link_to "rezervuokite internetu", form_path, class:"btn btn-warning float-right"%>
+            <%= link_to "skaityti daugiau", form_path, class:"btn btn-warning float-right"%>
 
            </div>
           </div>
         </div>
       </div>
+      </div>
+    </div>
     </div>
 
-    <div class="col-md-6" style="
+    <div class="col-md-5" style="
     background-color: rgba(241, 231, 231, 0.35);">
-      <div class="padding-top-90" style="height: 2870px;">
+      <div class="padding-top-90" style="height: 2463px;">
         <div style=" position: sticky;position: -webkit-sticky; top: 0;">
-          <img src="<%= image_path 'map' %>" alt="" class="map">
+
+          <div id="map" style="width: 100%; height: 100vh;"></div>
+
+
+
+<script>
+
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: new google.maps.LatLng(54.6990577, 25.2650944),
+          mapTypeId: 'roadmap'
+        });
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
+        var features = [
+          {
+            position: new google.maps.LatLng(54.6878127, 25.30951559999994),
+            icon: {url: "http://res.cloudinary.com/dwrc1zdc9/image/upload/v1502901483/rumai.png", scaledSize: new google.maps.Size(112, 40),origin: new google.maps.Point(0,0),anchor: new google.maps.Point(0, 0)}
+          }, {
+            position: new google.maps.LatLng(54.701721, 25.283824900000013),
+            icon: {url: "http://res.cloudinary.com/dwrc1zdc9/image/upload/v1502901740/lakrima.png", scaledSize: new google.maps.Size(112, 40),origin: new google.maps.Point(0,0),anchor: new google.maps.Point(0, 0)}
+          },
+          {
+            position: new google.maps.LatLng(54.705329, 25.238572999999974),
+            icon: {url: "http://res.cloudinary.com/dwrc1zdc9/image/upload/v1502902357/nutrukusi-styga.png", scaledSize: new google.maps.Size(112, 40),origin: new google.maps.Point(0,0),anchor: new google.maps.Point(0, 0)}
+          },
+          {
+            position: new google.maps.LatLng(54.8031042, 25.25887549999993),
+            icon: {url: "http://res.cloudinary.com/dwrc1zdc9/image/upload/v1502902357/reverans.png", scaledSize: new google.maps.Size(112, 40),origin: new google.maps.Point(0,0),anchor: new google.maps.Point(0, 0)}
+          }
+
+        ];
+
+        // Create markers.
+        features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            animation: google.maps.Animation.DROP,
+            position: feature.position,
+            icon: feature.icon,
+            map: map
+          });
+        });
+      }
+
+    </script>
+
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-z1t9uAJitMyEpaj8CCK3WxtmtHAyNr0&callback=initMap">
+    </script>
+
+
+          <!-- <img src="<%#= image_path 'map' %>" alt="" class="map"> -->
           <!-- <div class="text-center">
             <h3><i class="fa fa-phone" aria-hidden="true" style="color:green;"></i> Telefonas visą parą: <a href="tel:+37069304228">869304228</a></h3>
           </div> -->
@@ -369,6 +279,15 @@
     </div>
   </div>
 
+<script>
+  $(function () {
+    var parent = $("#shuffle");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+</script>
 
 <!-- </div> -->
 <!-- </div> -->

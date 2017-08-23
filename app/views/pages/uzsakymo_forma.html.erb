@@ -1,0 +1,65 @@
+<div class="container" style="background: #00d2ff;
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);background: linear-gradient(to right, #3a7bd5, #00d2ff);
+color: white; width: 100vw; height: 105vh">
+    <div class="text-center padding-top-90">
+      <h1 >Užbaikite užsakymą</h1>
+      <h3>Prašau atsakykite keletą klausimų pries užbaigiant užsakymą </h3>
+    </div>
+  <div class="col-md-3" style="    padding: 20px 0 20px 0;
+    background-color: rgba(180, 183, 183, 0.12);
+    border-radius: 5px; margin-top: 90px">
+    <ul>
+      <td><h3><strong>Laidojimo namai: </strong><br>  <%= params[:name] %> </h3></td>
+      <td><h3><strong>Paslaugų paketas: </strong><br> <%= params[:type] %> </h3></td>
+      <td><h3><strong>Kaina:</strong> <%= params[:price] %> </h3></td>
+    </ul>
+  </div>
+  <div class="col-md-offset-1 col-md-4">
+    <form action="https://www.enformed.io/mxkuy3l6" method="POST" >
+    <div class="form-group">
+      <label>Jūsų pilnas vardas</label>
+      <input name="first_name" type="text" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>Jūsų telefono numeris</label>
+      <input name="phone" type="number" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label>Jūsų emailo adresas</label>
+      <input name="email" type="email" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>Ar turite pažymą liudijančią mirties faktą?</label><br>
+      <input style="margin-right: 5px;" type="radio" name="Pazyma" value="taip"> Taip
+      <input style="margin-left: 20px; margin-right: 5px;" type="radio" name="Pazyma" value="ne"> Ne
+    </div>
+
+    <div class="form-group">
+      <label>Kur šiuo metu randasi vėlionis/vėlionė?</label><br>
+      <input style="margin-right: 5px;" type="radio" name="velionio-vieta" value="Namuose">Namuose
+      <input style="margin-left: 20px; margin-right: 5px;"  type="radio" name="velionio-vieta" value="Ligoninėje">Ligoninėje
+      <input style="margin-left: 20px; margin-right: 5px;"  type="radio" name="velionio-vieta" value="Morge">Morge
+      <input style="margin-left: 20px; margin-right: 5px;"  type="radio" name="velionio-vieta" value="Užsienyje">Užsienyje
+    </div>
+
+    <div class="form-group">
+      <label>Parašykite vėlionio/vėlionės būvimo vietos adresą arba įstaigos pavadinimą</label>
+      <input name="kuno-vieta" type="text" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>Parašykite vėlionio/vėlionės vardą ir pavardę</label>
+      <input name="velionio-vardas" type="text" class="form-control"/>
+    </div>
+
+    <input type="hidden" name="name" value="<%= params[:name] %>" />
+    <input type="hidden" name="price" value="<%= params[:price] %>" />
+    <input type="hidden" name="type" value="<%= params[:type] %>" />
+    <input type="hidden" name="*cc" value="kristijonas.zibutis@gmail.com, kristupas.saikus@gmail.com,<%= params[:email] %> " />
+    <input type="hidden" name="*redirect" value="http://localhost:3000/thank-you" />
+
+    <button type="submit" class="btn btn-warning">užsakykite</button>
+  </div>
+</div>
