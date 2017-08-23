@@ -7,4 +7,14 @@ class PagesController < ApplicationController
 
   def apie
   end
+
+  def laidojimo_rumai
+  end
+
+  def uzsakymo_forma
+  end
+
+  def thank_you
+  end
+
 end
